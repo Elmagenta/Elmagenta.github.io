@@ -4,12 +4,11 @@ author: Elmagenta
 date: 2023-07-17
 category: Jekyll
 layout: post
-cover: /assets/filebrowser.png
 ---
 
 Default File Browser installation
 
-~~~yaml
+```yaml
 version: "3"
 services:
   filebrowser:
@@ -22,7 +21,7 @@ services:
       - ./file_config:/config:rw
       - /:/data 
     restart: always
-~~~
+```
 
 Personal File Browser installation
 The difference is that with this folder mounting i can mount a folder, in this case they are called "share" and "personal", with different subfolders in it.
