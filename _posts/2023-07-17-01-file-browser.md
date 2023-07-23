@@ -36,7 +36,7 @@ services:
     container_name: file_browser
     user: "1000:1000"
     ports:
-      - 18080:8080
+      - 18080:8080 # You can change the port '18080' with another port
     volumes:
       - ./file_config:/config:rw
       - MyVolume3:/data/share/Folder3:rw
